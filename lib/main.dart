@@ -33,10 +33,10 @@ class _MybusinesscardState extends State<Mybusinesscard> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               CircleAvatar(
-                radius: 155,
+                radius: 123,
                 backgroundColor: Colors.white,
                 child: CircleAvatar(
-                  radius: 150,
+                  radius: 120,
                   backgroundImage: AssetImage("images/images_1.jpg"),
                 ),
               ),
@@ -53,71 +53,39 @@ class _MybusinesscardState extends State<Mybusinesscard> {
                       fontFamily: 'Pacifico'),
                 ),
               ),
-              Padding(
-                padding: EdgeInsets.all(16),
-                child: Container(
-                  height: 50,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(12),
-                    color: Colors.white,
+              Divider(
+                color: Color(0xFF2B475E),
+              ),
+              Card(
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(12)),
+                margin: EdgeInsets.symmetric(vertical: 8, horizontal: 16),
+                child: ListTile(
+                  leading: Icon(
+                    Icons.phone,
+                    color: Colors.black,
                   ),
-                  child: Row(
-                    children: [
-                      Spacer(
-                        flex: 1,
-                      ),
-                      Icon(
-                        Icons.phone,
-                        color: Colors.black,
-                        size: 28,
-                      ),
-                      Spacer(
-                        flex: 2,
-                      ),
-                      Container(
-                        child: Text(
-                          "(962)  7799331",
-                          style: TextStyle(fontSize: 20),
-                        ),
-                      ),
-                      Spacer(
-                        flex: 2,
-                      ),
-                    ],
+                  title: Text(
+                    "(962) 099922341",
+                    style: TextStyle(fontWeight: FontWeight.w600, fontSize: 18),
                   ),
                 ),
               ),
-              Padding(
-                padding: EdgeInsets.all(16),
-                child: Container(
-                  height: 50,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(12),
-                    color: Colors.white,
+              Divider(
+                height: 15,
+              ),
+              Card(
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(12)),
+                margin: EdgeInsets.symmetric(vertical: 8, horizontal: 16),
+                child: ListTile(
+                  leading: Icon(
+                    Icons.mail,
+                    color: Colors.black,
                   ),
-                  child: Row(
-                    children: [
-                      Spacer(
-                        flex: 1,
-                      ),
-                      Icon(
-                        Icons.mail,
-                        color: Colors.black,
-                        size: 28,
-                      ),
-                      Spacer(
-                        flex: 2,
-                      ),
-                      Container(
-                        child: Text(
-                          "Jordan@mail",
-                          style: TextStyle(fontSize: 20),
-                        ),
-                      ),
-                      Spacer(
-                        flex: 2,
-                      ),
-                    ],
+                  title: Text(
+                    "Jordan@122e",
+                    style: TextStyle(fontSize: 18, fontWeight: FontWeight.w600),
                   ),
                 ),
               ),
